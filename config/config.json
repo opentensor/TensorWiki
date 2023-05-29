@@ -1,7 +1,7 @@
 {
-  "projectTitle": "NextBook: Easy Docs With Markdown!",
-  "projectDescription": "NextBook is quick and easy way to buid technical books or documentation that support modern standards and run blazingly fast. It's built with MDX, Next.js and React and works by compiling markdown or MDX down to plain static html.",
-  "projectURL": "https://next-book.vercel.app",
+  "projectTitle": "Bittensor",
+  "projectDescription": "Internet Scale Democratized Intelligence",
+  "projectURL": "https://www.bittensor.com",
   "locale": "en",
   "text": {
     "Tags": "Tags",
@@ -25,53 +25,142 @@
       "path": "/intro"
     },
     {
-      "title": "NextBook Features",
-      "path": "/nextbook/nextbook-features"
-    },
-    {
       "title": "Reference",
-      "path": "/reference/markdown"
+      "path": "/getting-started/installation"
     },
     {
       "title": "Github",
-      "path": "https://github.com/amiroff/NextBook"
+      "path": "https://github.com/opentensor/bittensor"
     }
   ],
   "toc": [
     {
-      "chapters": [{ "title": "Welcome to NextBook", "path": "/intro" }]
+      "chapters": [
+        { 
+          "title": "Introduction", 
+          "path": "/intro" 
+        }
+      ]
     },
     {
-      "part": "Using NextBook",
+      "part": "Getting Started",
       "chapters": [
         {
-          "title": "NextBook Features",
-          "path": "/nextbook/nextbook-features"
+          "title": "Installation",
+          "path": "/getting-started/installation"
         },
         {
-          "title": "Getting Started",
-          "path": "/nextbook/getting-started"
+          "title": "Wallets",
+          "path": "/getting-started/wallets"
+        }
+      ]
+    },
+    {
+      "part": "Subnetworks",
+      "chapters": [
+        { 
+          "title": "Subnetworks", 
+          "path": "/subnetworks/subnetworks" 
         },
-        {
-          "title": "Settings",
-          "path": "/nextbook/settings"
+        { 
+          "title": "Registration", 
+          "path": "/subnetworks/registration" 
+        }
+      ]
+    },
+    {
+      "part": "Clients",
+      "chapters": [
+        { 
+          "title": "Clients", 
+          "path": "/clients/clients" 
+        }
+      ]
+    },
+    {
+      "part": "Mining",
+      "chapters": [
+        { 
+          "title": "Mining", 
+          "path": "/mining/mining" 
+        }
+      ]
+    },
+    {
+      "part": "Validating",
+      "chapters": [
+        { 
+          "title": "Validating", 
+          "path": "/validating/validating" 
         },
-        {
-          "title": "Page Metadata",
-          "path": "/nextbook/page-metadata"
+        { 
+          "title": "Validator Permit", 
+          "path": "/validating/validator-permit" 
+        }
+      ]
+    },
+    {
+      "part": "Delegation",
+      "chapters": [
+        { 
+          "title": "Delegation", 
+          "path": "/delegation/delegation" 
         },
-        {
-          "title": "In Progress Features",
-          "path": "/nextbook/in-progress-features"
+        { 
+          "title": "Signing Delegates", 
+          "path": "/delegation/signing" 
         }
       ]
     },
     {
       "part": "Reference",
       "chapters": [
-        { "title": "Markdown Usage", "path": "/reference/markdown" },
-        { "title": "Fenced Code Usage", "path": "/reference/fencedcode" },
-        { "title": "Using MDX", "path": "/reference/using-mdx" }
+        {
+          "title": "btcli",
+          "path": "/reference/btcli"
+        },
+        { 
+          "title": "Difficulty", 
+          "path": "/reference/difficulty" 
+        },
+        { 
+          "title": "Testnet", 
+          "path": "/reference/testnet" 
+        },
+        { 
+          "title": "Cheat", 
+          "path": "/reference/markdown" 
+        }
+      ]
+    },
+    {
+      "part": "Glossary",
+      "chapters": [
+        {
+          "title": "glossary",
+          "path": "/glossary/glossary"
+        }
+      ]
+    },
+    {
+      "part": "bittensor-api",
+      "chapters": [
+        {
+          "title": "bt.subtensor",
+          "path": "/bittensor-api/bt.subtensor"
+        },
+        {
+          "title": "bt.wallet",
+          "path": "/bittensor-api/bt.wallet"
+        },
+        {
+          "title": "bt.metagraph",
+          "path": "/bittensor-api/bt.metagraph"
+        },
+        {
+          "title": "bt.logging",
+          "path": "/bittensor-api/bt.logging"
+        }
       ]
     }
   ]

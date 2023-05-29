@@ -16,8 +16,8 @@ export default function HomePage() {
         Welcome To NextBook!
       </div>
       <div className='text-center'>
-        <p>You can use all Next.js features and create your custom app.</p>
-        <p>You can use this page as a homepage or to redirect to content.</p>
+        <p>Bittensor Opensource Wikipedia + Documentation</p>
+        <p>Welcome</p>
         <p>
           For now, redirecting you to the{' '}
           <Link href={docsIndex}>
