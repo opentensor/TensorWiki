@@ -1,6 +1,8 @@
 ## TensorWiki
 Bittensor Opensource Wikipedia + Documentation
 
+https://tensor-wiki.vercel.app/intro
+
 ## Getting Started
 1. Having Node installed beforehand, bootstrap version of this pro `npx create-next-app tensor-wiki -e https://github.com/opentensor/TensorWiki`
 2. Run `npm run dev:watch` and open [http://localhost:3000/](http://localhost:3000/)
