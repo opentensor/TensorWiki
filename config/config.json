@@ -1,6 +1,6 @@
 {
-  "projectTitle": "Bittensor",
-  "projectDescription": "Internet Scale Democratized Intelligence",
+  "projectTitle": "Tensor Wiki",
+  "projectDescription": "Bittensor Opensource Documentation + Wiki",
   "projectURL": "https://www.bittensor.com",
   "locale": "en",
   "text": {
@@ -30,7 +30,7 @@
     },
     {
       "title": "Github",
-      "path": "https://github.com/opentensor/bittensor"
+      "path": "https://github.com/opentensor/TensorWiki"
     }
   ],
   "toc": [

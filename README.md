@@ -10,13 +10,19 @@ Bittensor Opensource Wikipedia + Documentation
 6. [Deploy](https://vercel.com/new) your respository or export (`npm run export`) and copy your content to any static hosting provider like Vercel, Netlify, Github Pages or Google Cloud.
 8. Have fun! 🎉
 
-# Getting Started As Code
+## Getting Started As Code
 Having Node installed beforehand:
 ```pyhon
 npx create-next-app tensor-wiki -e https://github.com/opentensor/TensorWiki
 cd TensorWiki
 npm run dev:watch
 ```
+
+## Contributing
+1. Read about [NextBooks](https://next-book.vercel.app/intro)
+2. Read how to use [Markdown](https://next-book.vercel.app/reference/markdown)
+3. Make changes to `content/`
+4. Submit a pull request to [TensorWiki](https://github.com/opentensor/TensorWiki) 
 
 ## Primary Features 🧿
 - 💅 Good looking, simple and readable UI based on [tailwindcss](https://tailwindcss.com/) including `dark` mode and `auto-centered` layout,
