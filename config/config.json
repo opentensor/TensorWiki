@@ -1,7 +1,7 @@
 {
   "projectTitle": "Tensor Wiki",
   "projectDescription": "Bittensor Opensource Documentation + Wiki",
-  "projectURL": "https://www.bittensor.com",
+  "projectURL": "https://tensor-wiki.vercel.app/intro",
   "locale": "en",
   "text": {
     "Tags": "Tags",
