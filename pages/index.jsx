@@ -13,11 +13,10 @@ export default function HomePage() {
   return (
     <div className='mx-auto max-w-md'>
       <div className='text-center mt-32 text-3xl font-bold'>
-        Welcome To NextBook!
+        Welcome To TensorWiki!
       </div>
       <div className='text-center'>
         <p>Bittensor Opensource Wikipedia + Documentation</p>
-        <p>Welcome</p>
         <p>
           For now, redirecting you to the{' '}
           <Link href={docsIndex}>
