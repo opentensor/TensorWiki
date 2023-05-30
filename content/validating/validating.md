@@ -1,30 +1,30 @@
 ---
 title: Validating
 ---
-Network validation is thus open to participants who have [registered](../subnetworks/registration) a uid on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
+Network validation is thus open to participants who have [registered](../subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
 
-#### Staking TAO  
+# Staking TAO  
 
 Attaching TAO on your validator can be achieved in two ways.
-1. By staking TAO to your miners directly by yourself
+1. By staking TAO to your miners directly.
 ```bash dark
 # Stake funds to your hotkey account within the bittensor incentive mechanism.
 btcli stake 
     --wallet.name YOUR_WALLET_NAME 
     --wallet.hotkey YOUR_HOTKEY_NAME
 ```
-2. Or by attracting delegated stake by nominating (and then advertising) your hotkey.
+2. By attracting delegated stake by nominating (and then advertising) your hotkey.
 ```bash dark
 # Nominate your hotkey as a delegate, making it available for delegated stake.
 btcli nominate 
     --wallet.name YOUR_WALLET_NAME 
     --wallet.hotkey YOUR_HOTKEY_NAME
 
-# To delegate funds to the hotkey of a delegate (your own or others)  
+# Delegate funds to the hotkey of a delegate (your own or others)  
 btcli delegate 
     --delegate_ss58key DELEGATE_SS58KEY
 ```
-##### Running a validator
+# Running a validator
 
 After attaining enough TAO for a [validator permit](../validating/validator-permit) we recommend running Bittensor's [core validator](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/validators). You can run and install the core validator from [source](https://github.com/opentensor/bittensor.git). 
 ```bash dark
