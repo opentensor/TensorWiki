@@ -1,13 +1,15 @@
 ---
 title: Introduction
 ---
-Bittensor is a mining network, similar to Bitcoin, that includes built-in incentives designed to encourage computers to provide access to machine learning models in an efficient and censorship-resistant manner, for instance; generating text, audio, and images, or for extracting numerical representations of these input types a.k.a embeddings.
 
-There are three primary ways to interact with Bittensor which this documentation covers.
+Bittensor is a mining network, similar to Bitcoin, that rewards participants directly for their contributions in the form of compututational resources, expertise and innovation. The result is a robust informational ecosystem that offers censorship-resistant access to state-of-the-art artificial intelligence capabilities. The native currency, TAO, constitutes both reward and access token to the network. 
+
+This documentation covers the three primary ways that users can interact with the network: mining, validating, and as a client. 
 
 ---
 ## [Clients](clients/clients)
-Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
+
+Organizations and individuals seeking access to network competencies directly through client facing API's.  
 
 ```bash
 In [4]: llm( "Heraclitus was a ?" )
@@ -16,7 +18,8 @@ Out[4]: 'Greek philosopher known for his doctrine of change and the famous quote
 
 ---
 ## [Miners](mining/mining)
-Individuals contributing compute, expertise or innovation into Bittensor and looking to get paid for it.
+
+Participants seeking to contribute computational resources and expertise in return for TAO. 
 
 ```bash
 bittensor/
@@ -29,7 +32,8 @@ bittensor/
 
 ---
 ## [Validators](validating/validating)
-Tao holders looking to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.
+
+TAO holders who wish to participate in network governance and optimize their earnings in the ecosystem. 
 
 ```bash
 bittensor/
