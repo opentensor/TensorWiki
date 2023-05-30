@@ -258,7 +258,7 @@ You will use images a lot! Drop your images or svg vectors in public folder and 
 ```
 results in:
 
-![he Octocat](/images/octocat.png) 
+![The Octocat](/images/octocat.png) 
 ![The Surface](/images/surface.jpg 'The Surface Device')
 
 If you use [Excalidraw](https://excalidraw.com/) svg drawings and want them to change colors accordingly in dark mode, add `|ex` to image alt text. See below example in light/dark modes:

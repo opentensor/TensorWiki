@@ -20,7 +20,7 @@ $ tree bittensor
                         README.md           # GPT4ALL instructions.
                     ...
 ```
-Each miner comes with unqiue requirements and instructions in their source directory `bittensor/neurons/<subnetwork>/miners/<miner name>`.
+Each miner comes with unique requirements and instructions in their source directory `bittensor/neurons/<subnetwork>/miners/<miner name>`.
 ```bash dark
 # Installing miner requirements
 python3 -m pip install -r bittensor/neurons/text_prompting/miners/GPT4ALL/requirements.txt

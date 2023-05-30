@@ -51,7 +51,7 @@ btcli register
 
 ---
 ### TAO Recycle Registration
-Recycle registrations allow a miner to recycle TAO back into the inflation mechanism (to be passed through the incentive mechanism at a later date) in exchange for a UID on a subnetwork. Recycle registrations cost TAO to execute but takes less time to activate than POW registration. They recommended for miners seeking to attain slots quickly and who already have a small amount of TAO at their disposal. 
+Recycle registrations allow a miner to recycle TAO back into the inflation mechanism (to be passed through the incentive mechanism at a later date) in exchange for a UID on a subnetwork. Recycle registrations cost TAO to execute but takes less time to activate than POW registration. They are recommended for miners seeking to attain slots quickly and who already have a small amount of TAO at their disposal. 
 ```bash dark
 btcli recycle_register 
       --netuid SELECTED_NETUID
@@ -61,7 +61,7 @@ btcli recycle_register
 
 ---
 ### Cost Updates
-POW and the recycle regsistration cost are mutually adaptive, updating their costs on an `adjustment interval` so that the number of registrations over that interval remain constanct, i.e. 3 registrations per 100 blocks. Below is pseudo code for the update conditions.
+POW and the recycle registration cost are mutually adaptive, updating their costs on an `adjustment interval` so that the number of registrations over that interval remain constant, i.e. 3 registrations per 100 blocks. Below is pseudo code for the update conditions.
 ```python numbered dark title=subtensor/pallets/subtensor/src/block_step link=https://github.com/opentensor/subtensor/pallets/subtensor/src/block_step.rs
 if regs > target and recycle_regs > pow_regs:
       burn_cost *= ( n_burn_regs + target_regs ) / (2 * target_regs)
