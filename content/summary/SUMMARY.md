@@ -1,5 +1,5 @@
 # INTRODUCTION
-[GETTING STARTED](intro/index.md)
+[Introduction](intro/index.md)
 
 # GETTING STARTED
 - [Installation](getting-started/installation.md)
@@ -39,7 +39,7 @@
 
 
 # BITTENSOR-API
-- [bt.subtensor](biitensor-api/bt.subtensor.md)
-- [bt.wallet](biitensor-api/bt.wallet.md)
-- [bt.metagraph](biitensor-api/bt.metagraph.md)
-- [bt.logging](biitensor-api/bt.logging.md)
+- [bt.subtensor](bittensor-api/bt.subtensor.md)
+- [bt.wallet](bittensor-api/bt.wallet.md)
+- [bt.metagraph](bittensor-api/bt.metagraph.md)
+- [bt.logging](bittensor-api/bt.logging.md)
