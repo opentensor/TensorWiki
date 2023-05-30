@@ -1,11 +1,13 @@
 ---
 title: Validating
 ---
-Network validation is thus open to participants who have [registered](../subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
+Network validation is open to participants who have [registered](../subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
 
-# Staking TAO  
+ 
+# Staking TAO 
 
 Attaching TAO on your validator can be achieved in two ways.
+
 1. By staking TAO to your miners directly.
 ```bash dark
 # Stake funds to your hotkey account within the bittensor incentive mechanism.
@@ -13,7 +15,7 @@ btcli stake
     --wallet.name YOUR_WALLET_NAME 
     --wallet.hotkey YOUR_HOTKEY_NAME
 ```
-2. By attracting delegated stake by nominating (and then advertising) your hotkey.
+2. By attracting delegated stake. This is done by by nominating (and then advertising) your hotkey.
 ```bash dark
 # Nominate your hotkey as a delegate, making it available for delegated stake.
 btcli nominate 
@@ -50,7 +52,7 @@ python3 ~/.bittensor/bittensor/neurons/text_prompting/validators/core/neuron.py
     --logging.trace
 ```
 
-#### Running with PM2
+# Running with PM2
 It is recommended that you run validator using a process manager such as [PM2](https://pm2.io/).
 ```bash dark
 sudo apt-get install npm
@@ -61,9 +63,9 @@ pm2 start <path to validator.py>
     -- ... your args i.e. --wallet.name ...
 ```
 
-## Validator Permit
+# Validator Permit
 
-Only the largest 128 validators, in terms of stake, on any particular subnetwork are considered to have `validator permit`. Validators with permit are considered active within Bittensor's mining mechanism, Yuma Consensus, can validate the network, and get `dividends`.
+Only the largest 128 validators, in terms of stake, on any particular subnetwork are considered to have a `validator permit`. Validators with permits are considered active within Bittensor's mining mechanism and are able to validate and receive dividends. 
 
 ### How do I check to see if my validator has permit?
 The amount can be pulled from the metagraph based on your uid.
