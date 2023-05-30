@@ -122,7 +122,7 @@ btcli undelegate
 ```
 
 #### **Nominate**
-Nominate a hotkey as a delegate as a prerequisite for recieving delegations.
+Nominate a hotkey as a delegate as a prerequisite for receiving delegations.
 **Usage**: ```btcli nominate [OPTIONS]```
 ```bash dark
 btcli nominate

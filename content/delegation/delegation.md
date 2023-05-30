@@ -1,11 +1,11 @@
 ---
 title: Delegation
 ---
-Delegation is transferring Tao to a hotkey that is not owned by your coldkey. Hotkeys which have nominated themselves are open to recieve these delegations as a way of pool that investment from others. Often used to raise funds for a validator position or advertise a community project.
+Delegation is transferring Tao to a hotkey that is not owned by your coldkey. Hotkeys which have nominated themselves are open to receive these delegations as a way of pool that investment from others. Often used to raise funds for a validator position or advertise a community project.
 
 ### How does delegation work?
 
-All of the TAO delegated to a hotkey is available to be used within Bittensor's consensus mechanism. This gives the owning hotkey weight in the network to perform validation and thus recieve `dividends`. These dividends are distributed between the owning hotkey and the accounts that have nominated TAO. The chain currently enforces an `18%` cut for the owning hotkey while the remaining funds are distributed based on their proportion stake. 
+All of the TAO delegated to a hotkey is available to be used within Bittensor's consensus mechanism. This gives the owning hotkey weight in the network to perform validation and thus receive `dividends`. These dividends are distributed between the owning hotkey and the accounts that have nominated TAO. The chain currently enforces an `18%` cut for the owning hotkey while the remaining funds are distributed based on their proportion stake. 
 
 !> Delegation Cut
 The delegation cut is presently a hard coded but subject to change as the network evolves.
@@ -20,7 +20,7 @@ $ btcli list_delegates
 | Column | Description                                                 |
 | :------ | ------------------------------------------------------------|
 | INDEX   | Delegates with more total stake show higher in the list. |
-| DELEGATE | The name of the delegate + clickable URL connected to delegate website. Only shows if the deleagate has registered. |
+| DELEGATE | The name of the delegate + clickable URL connected to delegate website. Only shows if the delegate has registered. |
 | SS58    | Clipped ss58 hotkey of the delegate.                       |
 | NOMINATORS    | The number of unique coldkeys who have nominated to this hotkey.                       |
 | DELEGATE STAKE(τ)    | The amount of stake the owning coldkey has delegates to this hotkey (distinct from TAO delegated from others).                       |
@@ -51,7 +51,7 @@ You can `nominate` your hotkey to become and active delegate by running `btcli n
 ```bash dark
 $ btcli nominate
     --wallet.name YOUR_WALLET_NAME
-    --wallet.hotkye YOUR_HOTKEY_NAME
+    --wallet.hotkey YOUR_HOTKEY_NAME
 ```
 
 ## Further Reading

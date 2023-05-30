@@ -8,10 +8,13 @@ There are three primary ways to interact with Bittensor which this documentation
 ---
 ## [Clients](clients/clients)
 Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
-    ```bash dark
-    In [4]: llm( "Heraclitus was a ?" )
-    Out[4]: 'Greek philosopher known for his doctrine of change and the famous quote, "No man ever steps in the same river twice."'
-    ```
+```python numbered dark
+import bittensor
+llm = bittensor.BittensorLLM()
+llm( "Heraclitus was a ?" )
+
+Out[1]: 'Greek philosopher known for his doctrine of change and the famous quote, "No man ever steps in the same river twice."'
+```
 
 ---
 ## [Miners](mining/mining)

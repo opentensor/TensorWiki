@@ -14,7 +14,7 @@ print ('validator permit', subnet.validator_permit[ my_uid ])
 ```
 
 ### How much TAO is required to attain a validator permit?
-The amount of TAO required is depends on how the other largest 128 wallets distribute TAO across themselves. You can calculate the minimum using `bt.metagraph`:
+The amount of TAO required depends on how the other largest 128 wallets distribute TAO across themselves. You can calculate the minimum using `bt.metagraph`:
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph(1)

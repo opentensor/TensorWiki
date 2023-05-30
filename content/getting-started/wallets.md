@@ -4,7 +4,7 @@ title: Wallets
 Once you have [installed bittensor](../getting-started/installation) you can create wallets locally on your machine in two ways.
 
 !> Alternatives
-If you dont want to install bittensor you can use a [webbased wallet](#website-wallet), or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) to generate valid Bittensor keys.
+If you don't want to install bittensor you can use a [web based wallet](#website-wallet), or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) to generate valid Bittensor keys.
 
 #### Using btcli
 ```bash dark

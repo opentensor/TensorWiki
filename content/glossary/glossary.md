@@ -20,11 +20,11 @@ Computers holds [`TAO`](#tao) who verify the abilities of [`Miners`](#miners)  t
 
 ---
 ### Incentive
-The proportion of [`emission`](#emission) a [`miner`](#miners)  recieves every [`epoch`](#epoch) across other [`miners`](#miners) within the subnetwork.
+The proportion of [`emission`](#emission) a [`miner`](#miners)  receives every [`epoch`](#epoch) across other [`miners`](#miners) within the subnetwork.
 
 ---
 ### Emission
-The absolute number of tokens, usually measured in [`RAO`](#rao), a [`miner`](#miners) recieves every [`epoch`](#epoch).
+The absolute number of tokens, usually measured in [`RAO`](#rao), a [`miner`](#miners) receives every [`epoch`](#epoch).
 
 ---
 ### Epoch
@@ -36,7 +36,7 @@ The amount of [`TAO`](#tao) emitted into a [`subnetwork`](#subnetworks) on an [`
 
 ---
 ### RAO
-The smallest denomination of [`TAO`](#tao). `1 TAO` is eqvuivalent to 100,000,000 [`RAO`](#rao).
+The smallest denomination of [`TAO`](#tao). `1 TAO` is equivalent to 100,000,000 [`RAO`](#rao).
 
 ---
 ### TAO
@@ -45,7 +45,7 @@ The digital token that functions as currency in the network. Tao uses the same t
 
 ---
 ### Blocks
-Fundemental incremnets of state on [`subtensor`](#subtensor) Bittensors [`blockchain`](#blockchain). New block are created and added to the chain every 12 seconds.
+Fundamental increments of state on [`subtensor`](#subtensor) Bittensors [`blockchain`](#blockchain). New block are created and added to the chain every 12 seconds.
 
 ---
 ### Subtensor
@@ -89,7 +89,7 @@ The moving average of the weights `B = alpha * W + (1 - alpha) * B`. Historical 
 
 ---
 ### Ranks
-The column sum of the weight matrix [`W`](#weights) representing each miner's stake weighted rating according to the validators withing a [`subnetwork`](#subnetworks).
+The column sum of the weight matrix [`W`](#weights) representing each miner's stake weighted rating according to the validators within a [`subnetwork`](#subnetworks).
 ```python dark
 subnet = bittensor.metagraph(1)
 subnet.R
@@ -197,7 +197,7 @@ A measure of individuals' contributions in a cooperative game.
 
 ---
 ### Mountain Dataset
-Bittensor uses a 1.5 Terrabyte corpus dataset for training known as the Mountain.
+Bittensor uses a 1.5 Terabyte corpus dataset for training known as the Mountain.
 
 ---
 ### Sigmoid Function

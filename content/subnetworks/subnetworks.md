@@ -63,5 +63,6 @@ Correctly assessing the value of the miners on the network is incentivized by th
 ```python numbered dark
 import bittensor as bt
 subnet = bt.metagraph( netuid = 1 )
+print ('subnet 1 validator bonds', subnet.B )
 print ('subnet 1 validator dividends', subnet.D )
 ``` 
