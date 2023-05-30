@@ -156,7 +156,7 @@ Servers send requests to other peers in the network via the [`axon`](#axon).
 A Python torch object that produces a view into the network. This tool is used internally by [`Miners`](#miners)  and also for network analysis. 
 
 ---
-### Nakamoto
+### Finney
 Bittensor current main blockchain network post-March 2023.
 
 ---
