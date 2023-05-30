@@ -1,7 +1,7 @@
 ---
 title: Introduction
 ---
-Bittensor is a mining network, similar to Bitcoin, that includes built-in incentives designed to encourage computers to provide access to machine learning models in an efficient and censorship-resistant manner, for instance; generating text, audio, and images, or for extracting numerical representations of these input types a.k.a embeddings.
+Bittensor is a mining network, similar to Bitcoin, that includes built-in incentives designed to encourage computers to provide access to machine learning models in an efficient and censorship-resistant manner, for instance; generating text, audio, and images, or for extracting numerical representations of these input types.
 
 There are three primary ways to interact with Bittensor which this documentation covers.
 
