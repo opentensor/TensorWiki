@@ -1,9 +1,11 @@
 ---
-title: Clients 101
+title: Client API 
 ---
-Without participating directly in Bittensor’s incentive mechanism, i.e. before holding TAO, becoming a miner, or being a validator, the only way to access Bittensor is by relaying queries through endpoints who have opened exterior access to others. By default, Bittensor’s api uses the [Opentensor Foundation's](https://opentensor.ai/) endpoint which acts as a bridge onto the network.
+
+The Bittensor API allows clients to query the network through endpoints that have been made accessible by network validators. Clients using the network do not have to be otherwise involved in the incentive mechanism of the network. The default endpoint that is accessed through the API belongs to the [Opentensor Foundation](https://opentensor.ai/), however, any network validator is able to provide a unique entrypoint.  
 
 All entrypoints can be viewed using `btcli list_delegates`:
+
 ```bash dark
 0      Openτensor Foundaτion 
             https://opentensor.ai/      
@@ -16,11 +18,10 @@ All entrypoints can be viewed using `btcli list_delegates`:
 ...      
 ```
 
-!> Unique Entrypoints 
-Each validator might expose a unique entrypoint method. Visit their website to see how.
 
 ---
-### Querying 101
+# Querying the Network 
+
 Text prompting requests can be sent via `bt.prompt`.
 ```python numbered dark
 import bittensor as bt
@@ -40,7 +41,8 @@ should_I_buy_a_boat = bt.prompt( content = content )
 ```
 
 ---
-### Integrating with Langchain
+# Integrating with Langchain
+
 The BittensorLLM object can be integrated with langchain.
 ```python numbered dark removed=2,4 added=1,3
 import bittensor as bt
@@ -51,7 +53,8 @@ llm( 'prompt me' )
 ```
 
 ---
-### Getting multiple responses
+# Getting Multiple Responses
+
 You can return multiple responses for a single prompt.
 ```python numbered dark
 bt.prompt( "What should I do today?", return_all = True )
@@ -65,7 +68,8 @@ bt.prompt( "What should I do today?", return_all = True )
 ```
 
 ---
-### Specifying an entrypoint
+# Specifying an Entrypoint 
+
 You can specify a unique entrypoint endpoint to query by its hotkey.
 > NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted. 
 ```python numbered dark
@@ -76,7 +80,8 @@ print ( bt.prompt( "Heraclitus was a ", hotkey = open_endpoint_hotkey ) )
 ```
 
 ---
-### Using a validator key.
+# Using a Validator Key
+
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:
 ```python numbered dark
 import bittensor as bt
