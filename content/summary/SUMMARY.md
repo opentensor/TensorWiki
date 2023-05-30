@@ -1,4 +1,3 @@
-# INTRODUCTION
 [Introduction](intro/index.md)
 
 # GETTING STARTED
