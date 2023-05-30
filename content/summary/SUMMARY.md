@@ -1,9 +1,9 @@
-# Summary
-[The Bittensor Protocol](the_bittensor_protocol.md)
+# INTRODUCTION
+[GETTING STARTED](intro/index.md)
 
 # GETTING STARTED
 - [Installation](getting-started/installation.md)
-- [Wallet](getting-started/wallet.md)
+- [Wallet](getting-started/wallets.md)
 
 
 # SUBNETWORKS
