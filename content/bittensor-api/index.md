@@ -1,3 +1,7 @@
+
+
+
+
 <Accordion title="Subtensor">
 ---
 title: bt.subtensor
@@ -374,7 +378,6 @@ Returns the prometheus information for the specified hotkey account if it exists
 
 
 </Accordion>
-</Accordion>
 
 
 
@@ -387,7 +390,8 @@ Returns the prometheus information for the specified hotkey account if it exists
 
 
 
-<Accordion title="Global State">
+
+
 <Accordion title="Global State">
 
 
@@ -425,7 +429,25 @@ Returns the serving rate limit as of a specified block. If no block is provided,
 tx_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
 ```
 Returns the transaction rate limit as of a specified block. If no block is provided, the default is the current block.
+
+
+
 </Accordion>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <Accordion title="Subnetwork Stake">
 
@@ -497,12 +519,31 @@ Returns a list of information about all subnets as of a specified block. If no b
 get_subnet_info( self, netuid: int, block: Optional[int] = None ) -> Optional[SubnetInfo]
 ```
 Returns information about a subnet with a given `netuid` as of a specified block. If no block is provided, the default is the current block.
+
+
 </Accordion>
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <Accordion title="Delegation">
+
+
 
 ### is_hotkey_delegate
 ```python
@@ -545,6 +586,16 @@ get_delegated( self, coldkey_ss58: str, block: Optional[int] = None ) -> List[Tu
 ```
 Returns a list of delegates that a given coldkey is staked to, as of a specified block. If no block is provided, the default is the current block. Each item in the list is a tuple containing the delegate's information and the staked balance.
 </Accordion>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -652,7 +703,15 @@ Returns a list of lightweight neurons (without weights and bonds) from the chain
 metagraph( self, netuid: int, lite: bool = True ) -> 'bittensor.Metagraph'
 ```
 Returns the metagraph for the subnet associated with a given network user id (netuid). If 'lite' is True, it returns a metagraph using the lightweight sync (no weights, no bonds).
+
+
 </Accordion>
+
+
+
+
+
+
 
 
 
@@ -698,6 +757,14 @@ The string returned by this method is identical to the one provided by the `__st
 </Accordion>
 
 
+
+
+
+
+
+
+
+
 <Accordion title="Initialization">
 
 ## Initialization
@@ -710,6 +777,15 @@ obj = bt.subtensor( config, network, chain_endpoint )
 ```
 
 </Accordion>
+
+
+
+
+
+
+
+
+
 
 
 <Accordion title="Arguments">
