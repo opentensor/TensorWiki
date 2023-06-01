@@ -1,8 +1,6 @@
 
 
-
-<Accordion title="subtensor accordian">
-
+<Accordion title="Subtensor">
 ---
 title: bt.subtensor
 ---
@@ -143,11 +141,7 @@ Removes stake from each hotkey in the list to a common coldkey.
 
 </Accordion>
 
----
-
 <Accordion title="Hyperparameters">
-
----
 
 ### rho
 ```python
@@ -392,11 +386,7 @@ tx_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
 Returns the transaction rate limit as of a specified block. If no block is provided, the default is the current block.
 </Accordion>
 
-
-
 <Accordion title="Subnetwork Stake">
-
----
 
 ### subnet_exists
 ```python
@@ -685,14 +675,9 @@ obj = bt.subtensor( config, network, chain_endpoint )
     The subtensor endpoint flag. If set, overrides the network argument.
 
 
-
-
-
 </Accordion>
 
----
-
-<Accordion title="Wallet accordian">
+<Accordion title="Basic Commands">
 
 ---
 title: bt.wallet
@@ -845,14 +830,9 @@ Creates a coldkey from a suri string. Optionally encrypts and overwrites existin
 
 
 
-
 </Accordion>
 
-
-
-
-<Accordion title="metagraph accordan">
-
+<Accordion title="Metagraph">
 
 ---
 title: bt.metagraph
@@ -1038,6 +1018,77 @@ def load_from_path(self, dir_path:str) -> 'metagraph'
 Loads the Metagraph object's state_dict from the specified directory path.
 
 
+</Accordion>
+
+
+<Accordion title="Logging">
+
+
+
+
+
+
+
+
+---
+title: bt.logging
+---
+# Logging Reference Documentation
+
+---
+## Introduction
+The `Logging` interfaces with bittensor internal logging system.
+
+## Examples
+```python dark
+import bittensor as bt
+
+# Turn on debug logs
+bt.debug()
+
+# Turn on trace logs
+bt.trace()
+
+# Turn off debug logs
+bt.set_debug(False)
+
+# Turn off trace logs
+bt.set_trace(False)
+
+# Turn on logging from class definition
+bt.logging( set_debug = True )
+
+# Instantiate logging from command line args
+bt.logging( bt.logging.config() )
+
+# Turn on logging to file
+bt.logging( record_log = True, logging_dir = '/path/to/logs/' )
+
+# Log
+bt.logging.info(message)
+bt.logging.debug(message)
+bt.logging.trace(message)
+bt.logging.success(message)
+bt.logging.critical(message)
+bt.logging.error(message)
+>>> 2023-05-29 09:27:25.426 |       INFO       | message                           
+
+# Log using prefex suffix design
+bt.logging.info(prefix, message)
+bt.logging.debug(prefix, message)
+bt.logging.trace(prefix, message)
+bt.logging.success(prefix, message)
+bt.logging.critical(prefix, message)
+bt.logging.error(prefix, message)
+>>> 2023-05-29 09:27:47.184 |       INFO       | cat                           dogs
+```
+
+
+
+
+
+
 
 
 </Accordion>
+

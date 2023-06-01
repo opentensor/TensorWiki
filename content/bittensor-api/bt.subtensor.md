@@ -1,3 +1,5 @@
+
+<Accordion title="Subtensor">
 ---
 title: bt.subtensor
 ---
@@ -670,3 +672,6 @@ obj = bt.subtensor( config, network, chain_endpoint )
     an entry point node from that network.
 - `chain_endpoint (str, default=None)`: 
     The subtensor endpoint flag. If set, overrides the network argument.
+
+
+</Accordion>

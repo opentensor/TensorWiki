@@ -1,3 +1,5 @@
+<Accordion title="Metagraph">
+
 ---
 title: bt.metagraph
 ---
@@ -180,3 +182,6 @@ Loads the Metagraph object's state_dict from bittensor root directory.
 def load_from_path(self, dir_path:str) -> 'metagraph'
 ```
 Loads the Metagraph object's state_dict from the specified directory path.
+
+
+</Accordion>
