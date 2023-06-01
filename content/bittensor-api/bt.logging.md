@@ -1,3 +1,13 @@
+
+<Accordion title="Logging">
+
+
+
+
+
+
+
+
 ---
 title: bt.logging
 ---
@@ -50,3 +60,12 @@ bt.logging.critical(prefix, message)
 bt.logging.error(prefix, message)
 >>> 2023-05-29 09:27:47.184 |       INFO       | cat                           dogs
 ```
+
+
+
+
+
+
+
+
+</Accordion>
