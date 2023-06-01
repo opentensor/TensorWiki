@@ -143,7 +143,11 @@ Removes stake from each hotkey in the list to a common coldkey.
 
 </Accordion>
 
+---
+
 <Accordion title="Hyperparameters">
+
+---
 
 ### rho
 ```python
