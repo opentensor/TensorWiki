@@ -682,6 +682,7 @@ obj = bt.subtensor( config, network, chain_endpoint )
 
 </Accordion>
 
+---
 
 <Accordion title="Wallet accordian">
 
