@@ -820,6 +820,464 @@ obj = bt.subtensor( config, network, chain_endpoint )
 
 
 
+<Accordion title="Basic Commands">
+
+---
+title: bt.wallet
+---
+# Wallet Class Reference Documentation
+
+---
+## Introduction
+The `Wallet` acts as an interface over a coldkey, hotkey pairing.
+
+## Examples
+```python dark
+import bittensor as bt
+
+# Creating a default wallet coldkey = default, hotkey = default, path = ~/.bittensor/wallets
+wallet = bt.wallet()
+
+# Create wallet by parsing --wallet.name, --wallet.hotkey and --wallet.path from the command line.
+wallet = bt.wallet( config = bt.wallet.config() )
+
+# Create wallet by explicitly setting names of coldkey, hotkey and path.
+wallet = bt.wallet( name = 'my_coldkey', hotkey = 'my_first_hotkey', path = '~/path/to/wallets/dir' )
+```
+
+## Methods
+
+---
+### create_coldkey_from_uri
+```python
+create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
+```
+Creates coldkey from suri string, optionally encrypts it with the user's inputed password.
+
+---
+### create_hotkey_from_uri
+```python
+create_hotkey_from_uri( self, uri:str, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
+```
+Creates hotkey from suri string, optionally encrypts it with the user's inputed password.
+
+---
+### new_coldkey
+```python
+new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
+```
+Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
+
+---
+### create_new_coldkey
+```python
+create_new_coldkey( self, n_words:int = 12, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
+```
+Creates a new coldkey, optionally encrypts it with the user's inputed password and saves to disk.
+
+---
+### new_hotkey
+```python
+new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
+```
+Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
+
+---
+### create_new_hotkey
+```python
+create_new_hotkey( self, n_words:int = 12, use_password: bool = False, overwrite:bool = False) -> 'Wallet'
+```
+Creates a new hotkey, optionally encrypts it with the user's inputed password and saves to disk.
+
+---
+### regenerate_coldkeypub
+```python
+regenerate_coldkeypub( self, ss58_address: Optional[str] = None, public_key: Optional[Union[str, bytes]] = None, overwrite: bool = False ) -> 'Wallet'
+```
+Regenerates the coldkeypub from passed ss58_address or public_key and saves the file
+
+---
+### regenerate_coldkey
+```python
+regenerate_coldkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
+```
+Regenerates the coldkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
+
+---
+### regenerate_hotkey
+```python
+regenerate_hotkey(self, use_password: bool = True, overwrite: bool = False, **kwargs) -> 'Wallet'
+```
+Regenerates the hotkey from passed mnemonic, seed, or json encrypts it with the user's password and saves the file.
+
+---
+### __str__
+```python
+__str__(self)
+```
+Returns a string representation of the Wallet.
+
+---
+### __repr__
+```python
+__repr__(self)
+```
+Returns the same string representation as `__str__`.
+
+---
+### create_if_non_existent
+```python
+create_if_non_existent(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
+```
+Creates coldkeypub and hotkeys if they don't exist.
+
+
+---
+### create
+```python
+create(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False) -> 'Wallet'
+```
+Similar to `create_if_non_existent`, creates coldkeypub and hotkeys if they don't exist.
+
+---
+### recreate
+```python
+recreate(self, coldkey_use_password:bool = True, hotkey_use_password:bool = False ) -> 'Wallet'
+```
+Creates new coldkeypub and hotkeys, overwriting existing ones.
+
+---
+### set_hotkey, set_coldkeypub, set_coldkey
+```python
+set_hotkey(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
+set_coldkeypub(self, keypair: 'bittensor.Keypair', encrypt: bool = False, overwrite: bool = False) -> 'bittensor.Keyfile'
+set_coldkey(self, keypair: 'bittensor.Keypair', encrypt: bool = True, overwrite: bool = False) -> 'bittensor.Keyfile'
+```
+Sets the hotkey, coldkeypub, and coldkey, respectively. Each can optionally be encrypted and overwritten.
+
+---
+### get_coldkey, get_hotkey, get_coldkeypub
+```python
+get_coldkey(self, password: str = None ) -> 'bittensor.Keypair'
+get_hotkey(self, password: str = None ) -> 'bittensor.Keypair'
+get_coldkeypub(self, password: str = None ) -> 'bittensor.Keypair'
+```
+Returns the coldkey, hotkey, and coldkeypub, respectively. If encrypted, requires a password.
+
+---
+### create_coldkey_from_uri
+```python
+create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
+```
+Creates a coldkey from a suri string. Optionally encrypts and overwrites existing coldkey.
+
+
+
+</Accordion>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Accordion title="Metagraph">
+
+---
+title: bt.metagraph
+---
+# Chain State Torch Interface
+
+---
+## Introduction
+The `Metagraph` class holds the chain state of a particular subnetwork at a specific block.
+
+## Examples
+```python dark
+import bittensor as bt
+
+# Creating metagraph and sync state from a netuid parameter, defaults to connecting to network `finney`
+metagraph = bt.metagraph( netuid = 1 )
+
+# Create metagraph and sync with lite = False to sync weights and bonds matrices.
+metagraph = bt.metagraph( netuid = 1, lite = False)
+
+# Create metagraph and sync state from local entrypoint, assuming a subtensor chain is currently running.
+metagraph = bt.metagraph( netuid = 1, network = 'local' )
+
+# Create an empty metagraph object with no state syncing.
+metagraph = bt.metagraph( netuid = 1, sync = False )
+
+# Sync the metagraph at a particular block
+metagraph.sync( block = 100000 )
+
+# Save the metagraph to ~/.bittensor/metagraphs/network-$NETWORK_NAME/netuid-#NETUID/block-$BLOCK.pt
+metagraph.save()
+
+# Load the latest metagraph by block.
+metagraph.load()
+```
+
+## Methods
+---
+### S
+```python
+def S(self) -> torch.FloatTensor
+```
+Returns the total stake.
+
+---
+### R
+```python
+def R(self) -> torch.FloatTensor
+```
+Returns the ranks.
+
+---
+### I
+```python
+def I(self) -> torch.FloatTensor
+```
+Returns the incentive.
+
+---
+### E
+```python
+def E(self) -> torch.FloatTensor
+```
+Returns the emission.
+
+---
+### C
+```python
+def C(self) -> torch.FloatTensor
+```
+Returns the consensus.
+
+---
+### T
+```python
+def T(self) -> torch.FloatTensor
+```
+Returns the trust.
+
+---
+### Tv
+```python
+def Tv(self) -> torch.FloatTensor
+```
+Returns the validator trust.
+
+---
+### D
+```python
+def D(self) -> torch.FloatTensor
+```
+Returns the dividends.
+
+---
+### B
+```python
+def B(self) -> torch.FloatTensor
+```
+Returns the bonds.
+
+---
+### W
+```python
+def W(self) -> torch.FloatTensor
+```
+Returns the weights.
+
+---
+### hotkeys
+```python
+def hotkeys(self) -> List[str]
+```
+Returns the list of hotkeys for the axons.
+
+---
+### coldkeys
+```python
+def coldkeys(self) -> List[str]
+```
+Returns the list of coldkeys for the axons.
+
+---
+### addresses
+```python
+def addresses(self) -> List[str]
+```
+Returns the list of IP addresses for the axons.
+
+---
+### __str__
+```python
+def __str__(self)
+```
+Returns a string representation of the Metagraph.
+
+---
+### __repr__
+```python
+def __repr__(self)
+```
+Returns the same string representation as `__str__`.
+
+---
+### metadata
+```python
+def metadata(self) -> dict
+```
+Returns a dictionary of Metagraph metadata.
+
+---
+### __init__
+```python
+def __init__(self, netuid: int, network: str = 'finney', lite: bool = True, sync: bool = True) -> 'metagraph'
+```
+Initializes a new instance of the Metagraph.
+
+---
+### sync
+```python
+def sync (self, block: Optional[int] = None, lite: bool = True) -> 'metagraph'
+```
+Syncs the Metagraph state at the passed block. Optionally syncs the weights also.
+
+---
+### save
+```python
+def save(self) -> 'metagraph'
+```
+Saves the Metagraph object's state_dict under bittensor root directory.
+
+---
+### load
+```python
+def load(self) -> 'metagraph'
+```
+Loads the Metagraph object's state_dict from bittensor root directory.
+
+---
+### load_from_path
+```python
+def load_from_path(self, dir_path:str) -> 'metagraph'
+```
+Loads the Metagraph object's state_dict from the specified directory path.
+
+
+</Accordion>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Accordion title="Logging">
+
+
+
+
+
+
+
+
+---
+title: bt.logging
+---
+# Logging Reference Documentation
+
+---
+## Introduction
+The `Logging` interfaces with bittensor internal logging system.
+
+## Examples
+```python dark
+import bittensor as bt
+
+# Turn on debug logs
+bt.debug()
+
+# Turn on trace logs
+bt.trace()
+
+# Turn off debug logs
+bt.set_debug(False)
+
+# Turn off trace logs
+bt.set_trace(False)
+
+# Turn on logging from class definition
+bt.logging( set_debug = True )
+
+# Instantiate logging from command line args
+bt.logging( bt.logging.config() )
+
+# Turn on logging to file
+bt.logging( record_log = True, logging_dir = '/path/to/logs/' )
+
+# Log
+bt.logging.info(message)
+bt.logging.debug(message)
+bt.logging.trace(message)
+bt.logging.success(message)
+bt.logging.critical(message)
+bt.logging.error(message)
+>>> 2023-05-29 09:27:25.426 |       INFO       | message                           
+
+# Log using prefex suffix design
+bt.logging.info(prefix, message)
+bt.logging.debug(prefix, message)
+bt.logging.trace(prefix, message)
+bt.logging.success(prefix, message)
+bt.logging.critical(prefix, message)
+bt.logging.error(prefix, message)
+>>> 2023-05-29 09:27:47.184 |       INFO       | cat                           dogs
+```
+
+
+
+
+
+
+
+
+</Accordion>
+
+
+
+
 
 
 
