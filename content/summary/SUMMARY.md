@@ -24,8 +24,7 @@
 
 
 
-# REFERENCEnew
-- [btcli](reference/btcli.md)
+# [BTCLI](reference/btcli.md)
 - [Difficulty](reference/difficulty.md)
 - [Testnet](reference/testnet.md)
 
