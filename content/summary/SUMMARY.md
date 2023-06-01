@@ -1,5 +1,5 @@
 
-[# Introduction](intro/index.md)
+# [Introduction](intro/index.md)
 
 # GETTING STARTED
 - [Installation](getting-started/installation.md)
