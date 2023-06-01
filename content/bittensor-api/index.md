@@ -585,7 +585,11 @@ Returns a list of all delegates as of a specified block. If no block is provided
 get_delegated( self, coldkey_ss58: str, block: Optional[int] = None ) -> List[Tuple[DelegateInfo, Balance]]
 ```
 Returns a list of delegates that a given coldkey is staked to, as of a specified block. If no block is provided, the default is the current block. Each item in the list is a tuple containing the delegate's information and the staked balance.
+
+
+
 </Accordion>
+
 
 
 
@@ -706,6 +710,11 @@ Returns the metagraph for the subnet associated with a given network user id (ne
 
 
 </Accordion>
+
+
+
+
+
 
 
 
