@@ -2,35 +2,27 @@
 # [INTRODUCTION](intro/index.md)
 
 # [GETTING STARTED](getting-started/installation.md)
+
 # [WALLET](getting-started/wallets.md)
 
-
 # [SUBNETWORKS](subnetworks/subnetworks.md)
-# [REGISTRATION](subnetworks/registration.md)
 
+# [REGISTRATION](subnetworks/registration.md)
 
 # [CLIENT API](clients/clients.md)
 
 # [MINING](mining/mining.md)
 
-
 # [VALIDATING](validating/validating.md)
 
-
 # [CONSENSUS MECHANISM](validating/yuma-consensus.md)
-
 
 # [DELEGATION](delegation/delegation.md)
 
 
-# [BTCLI](reference/btcli.md)
+# [DIFFICULTY](reference/difficulty.md)
 
-# [Difficulty](reference/difficulty.md)
-
-# [Testnet](reference/testnet.md)
-
-
-
+# [TESTNET](reference/testnet.md)
 
 # BITTENSOR-API
 - [bt.subtensor](bittensor-api/bt.subtensor.md)
