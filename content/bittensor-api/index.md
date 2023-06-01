@@ -147,6 +147,13 @@ Removes stake from each hotkey in the list to a common coldkey.
 
 
 
+
+
+
+
+
+
+
 <Accordion title="Hyperparameters">
 
 ### rho
@@ -299,6 +306,14 @@ Returns the network Tempo hyperparameter if the network exists. Inputs are `netu
 
 
 
+
+
+
+
+
+
+
+
 <Accordion title="Account Functions">
 
 ### get_total_stake_for_hotkey
@@ -356,6 +371,8 @@ Returns the axon information for the specified hotkey account if it exists. Inpu
 get_prometheus_info( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[axon_info]
 ```
 Returns the prometheus information for the specified hotkey account if it exists. Inputs are `hotkey_ss58` and an optional `block` number.
+
+
 </Accordion>
 
 
