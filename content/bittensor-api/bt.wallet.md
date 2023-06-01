@@ -1,3 +1,5 @@
+<Accordion title="Basic Commands">
+
 ---
 title: bt.wallet
 ---
@@ -146,3 +148,7 @@ Returns the coldkey, hotkey, and coldkeypub, respectively. If encrypted, require
 create_coldkey_from_uri(self, uri:str, use_password: bool = True, overwrite:bool = False) -> 'Wallet'
 ```
 Creates a coldkey from a suri string. Optionally encrypts and overwrites existing coldkey.
+
+
+
+</Accordion>
