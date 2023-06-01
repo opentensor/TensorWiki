@@ -298,3 +298,418 @@ Returns the network Tempo hyperparameter if the network exists. Inputs are `netu
 
 
 
+
+<Accordion title="Account Functions">
+
+### get_total_stake_for_hotkey
+```python
+get_total_stake_for_hotkey( self, ss58_address: str, block: Optional[int] = None ) -> Optional['bittensor.Balance']
+```
+Returns the total stake held on a hotkey including delegated. Inputs are `ss58_address` and an optional `block` number.
+
+---
+### get_total_stake_for_coldkey
+```python
+get_total_stake_for_coldkey( self, ss58_address: str, block: Optional[int] = None ) -> Optional['bittensor.Balance']
+```
+Returns the total stake held on a coldkey across all hotkeys including delegates. Inputs are `ss58_address` and an optional `block` number.
+
+---
+### get_stake_for_coldkey_and_hotkey
+```python
+get_stake_for_coldkey_and_hotkey( self, hotkey_ss58: str, coldkey_ss58: str, block: Optional[int] = None ) -> Optional['bittensor.Balance']
+```
+Returns the stake under a coldkey - hotkey pairing. Inputs are `hotkey_ss58`, `coldkey_ss58` and an optional `block` number.
+
+---
+
+### get_stake
+```python
+get_stake( self, hotkey_ss58: str, block: Optional[int] = None ) -> List[Tuple[str,'bittensor.Balance']]
+```
+Returns a list of stake tuples (coldkey, balance) for each delegating coldkey including the owner. Inputs are `hotkey_ss58` and an optional `block` number.
+
+---
+### does_hotkey_exist
+```python
+does_hotkey_exist( self, hotkey_ss58: str, block: Optional[int] = None ) -> bool
+```
+Returns true if the hotkey is known by the chain and there are accounts. Inputs are `hotkey_ss58` and an optional `block` number.
+
+---
+### get_hotkey_owner
+```python
+get_hotkey_owner( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[str]
+```
+Returns the coldkey owner of the passed hotkey if it exists. Inputs are `hotkey_ss58` and an optional `block` number.
+
+---
+### get_axon_info
+```python
+get_axon_info( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[axon_info]
+```
+Returns the axon information for the specified hotkey account if it exists. Inputs are `hotkey_ss58` and an optional `block` number.
+
+---
+### get_prometheus_info
+```python
+get_prometheus_info( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[axon_info]
+```
+Returns the prometheus information for the specified hotkey account if it exists. Inputs are `hotkey_ss58` and an optional `block` number.
+</Accordion>
+
+
+
+
+<Accordion title="Global State">
+
+### block
+```python
+@property
+def block (self) -> int:
+```
+Property that returns the current chain block.
+
+---
+### total_issuance
+```python
+total_issuance (self, block: Optional[int] = None ) -> 'bittensor.Balance'
+```
+Returns the total issuance of tokens as of a specified block. If no block is provided, the default is the current block.
+
+---
+### total_stake
+```python
+total_stake (self,block: Optional[int] = None ) -> 'bittensor.Balance'
+```
+Returns the total amount of stake as of a specified block. If no block is provided, the default is the current block.
+
+---
+### serving_rate_limit
+```python
+serving_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
+```
+Returns the serving rate limit as of a specified block. If no block is provided, the default is the current block.
+
+---
+### tx_rate_limit
+```python
+tx_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
+```
+Returns the transaction rate limit as of a specified block. If no block is provided, the default is the current block.
+</Accordion>
+
+<Accordion title="Subnetwork Stake">
+
+### subnet_exists
+```python
+subnet_exists( self, netuid: int, block: Optional[int] = None ) -> bool
+```
+Checks if a subnet with the given `netuid` exists as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_all_subnet_netuids
+```python
+get_all_subnet_netuids( self, block: Optional[int] = None ) -> List[int]
+```
+Returns a list of `netuid`s of all subnets as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_total_subnets
+```python
+get_total_subnets( self, block: Optional[int] = None ) -> int
+```
+Returns the total number of subnets as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_subnet_modality
+```python
+get_subnet_modality( self, netuid: int, block: Optional[int] = None ) -> Optional[int]
+```
+Returns the modality of a subnet with a specified `netuid` as of a given block. If no block is provided, the default is the current block.
+
+---
+### get_subnet_connection_requirement
+```python
+get_subnet_connection_requirement( self, netuid_0: int, netuid_1: int, block: Optional[int] = None) -> Optional[int]
+```
+Returns the connection requirement between two subnets with specified `netuid`s as of a given block. If no block is provided, the default is the current block.
+
+---
+### get_emission_value_by_subnet
+```python
+get_emission_value_by_subnet( self, netuid: int, block: Optional[int] = None ) -> Optional[float]
+```
+Returns the emission value of a subnet with the given `netuid` as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_subnet_connection_requirements
+```python
+get_subnet_connection_requirements( self, netuid: int, block: Optional[int] = None) -> Dict[str, int]
+```
+Returns a dictionary of the connection requirements of a subnet with the given `netuid` as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_subnets
+```python
+get_subnets( self, block: Optional[int] = None ) -> List[int]
+```
+Returns a list of all subnets as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_all_subnets_info
+```python
+get_all_subnets_info( self, block: Optional[int] = None ) -> List[SubnetInfo]
+```
+Returns a list of information about all subnets as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_subnet_info
+```python
+get_subnet_info( self, netuid: int, block: Optional[int] = None ) -> Optional[SubnetInfo]
+```
+Returns information about a subnet with a given `netuid` as of a specified block. If no block is provided, the default is the current block.
+</Accordion>
+
+
+
+
+<Accordion title="Delegation">
+
+### is_hotkey_delegate
+```python
+is_hotkey_delegate( self, hotkey_ss58: str ) -> bool
+```
+Checks if a delegate with the specified hotkey exists.
+
+---
+### get_delegate_take
+```python
+get_delegate_take( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[float]
+```
+Returns the 'take' (portion of the reward a delegate receives from staking) of a delegate specified by a hotkey as of a given block. If no block is provided, the default is the current block.
+
+---
+### get_nominators_for_hotkey
+```python
+get_nominators_for_hotkey( self, hotkey_ss58: str, block: Optional[int] = None ) -> List[Tuple[str, Balance]]
+```
+Returns a list of tuples, each containing a nominator's address and balance for the delegate specified by a hotkey as of a given block. If no block is provided, the default is the current block.
+
+---
+### get_delegate_by_hotkey
+```python
+get_delegate_by_hotkey( self, hotkey_ss58: str, block: Optional[int] = None ) -> Optional[DelegateInfo]
+```
+Returns information about a delegate specified by a hotkey as of a given block. If no block is provided, the default is the current block.
+
+---
+### get_delegates
+```python
+get_delegates( self, block: Optional[int] = None ) -> List[DelegateInfo]
+```
+Returns a list of all delegates as of a specified block. If no block is provided, the default is the current block.
+
+---
+### get_delegated
+```python
+get_delegated( self, coldkey_ss58: str, block: Optional[int] = None ) -> List[Tuple[DelegateInfo, Balance]]
+```
+Returns a list of delegates that a given coldkey is staked to, as of a specified block. If no block is provided, the default is the current block. Each item in the list is a tuple containing the delegate's information and the staked balance.
+</Accordion>
+
+
+
+<Accordion title="Neuron information per subnet">
+
+### is_hotkey_registered_any
+```python
+is_hotkey_registered_any( self, hotkey_ss58: str, block: Optional[int] = None) -> bool
+```
+Returns True if the hotkey is registered on any subnet. If no block is specified, the current block is used.
+
+---
+### is_hotkey_registered_on_subnet
+```python
+is_hotkey_registered_on_subnet( self, hotkey_ss58: str, netuid: int, block: Optional[int] = None) -> bool
+```
+Returns True if the hotkey is registered on a specified subnet. If no block is specified, the current block is used.
+
+---
+### is_hotkey_registered
+```python
+is_hotkey_registered( self, hotkey_ss58: str, netuid: int, block: Optional[int] = None) -> bool
+```
+Returns True if the hotkey is registered on a specified subnet. If no block is specified, the current block is used. 
+
+---
+### get_uid_for_hotkey_on_subnet
+```python
+get_uid_for_hotkey_on_subnet( self, hotkey_ss58: str, netuid: int, block: Optional[int] = None) -> int
+```
+Returns the user id (uid) for the hotkey on a specified subnet. If no block is specified, the current block is used.
+
+---
+### get_all_uids_for_hotkey
+```python
+get_all_uids_for_hotkey( self, hotkey_ss58: str, block: Optional[int] = None) -> List[int]
+```
+Returns a list of all user ids (uids) for the hotkey. If no block is specified, the current block is used.
+
+---
+### get_netuids_for_hotkey
+```python
+get_netuids_for_hotkey( self, hotkey_ss58: str, block: Optional[int] = None) -> List[int]
+```
+Returns a list of all network user ids (netuids) for the hotkey. If no block is specified, the current block is used.
+
+---
+### get_neuron_for_pubkey_and_subnet
+```python
+get_neuron_for_pubkey_and_subnet( self, hotkey_ss58: str, netuid: int, block: Optional[int] = None ) -> Optional[NeuronInfo]
+```
+Returns the neuron information for the hotkey on a specified subnet. If no block is specified, the current block is used.
+
+---
+### get_all_neurons_for_pubkey
+```python
+get_all_neurons_for_pubkey( self, hotkey_ss58: str, block: Optional[int] = None ) -> List[NeuronInfo]
+```
+Returns a list of all neurons for the hotkey. If no block is specified, the current block is used.
+
+---
+### neuron_has_validator_permit
+```python
+neuron_has_validator_permit( self, uid: int, netuid: int, block: Optional[int] = None ) -> Optional[bool]
+```
+Returns True if the neuron with the given uid has a validator permit for the specified subnet. If no block is specified, the current block is used.
+
+---
+### neuron_for_wallet
+```python
+neuron_for_wallet( self, wallet: 'bittensor.Wallet', netuid = int, block: Optional[int] = None ) -> Optional[NeuronInfo]
+```
+Returns the neuron information for the given wallet on a specified subnet. If no block is specified, the current block is used.
+
+### neuron_for_uid
+```python
+neuron_for_uid( self, uid: int, netuid: int, block: Optional[int] = None ) -> Optional[NeuronInfo]
+```
+Returns the neuron metadata associated with a given user id (uid) and network user id (netuid) at a specified block, or None if it does not exist.
+
+---
+### neurons
+```python
+neurons(self, netuid: int, block: Optional[int] = None ) -> List[NeuronInfo]
+```
+Returns a list of neurons from the chain for a given network user id (netuid) at a specified block.
+
+---
+### neuron_for_uid_lite
+```python
+neuron_for_uid_lite( self, uid: int, netuid: int, block: Optional[int] = None ) -> Optional[NeuronInfoLite]
+```
+Returns the lightweight neuron metadata (without weights and bonds) associated with a given user id (uid) and network user id (netuid) at a specified block, or None if it does not exist.
+
+---
+### neurons_lite
+```python
+neurons_lite(self, netuid: int, block: Optional[int] = None ) -> List[NeuronInfoLite]
+```
+Returns a list of lightweight neurons (without weights and bonds) from the chain for a given network user id (netuid) at a specified block.
+
+---
+### metagraph
+```python
+metagraph( self, netuid: int, lite: bool = True ) -> 'bittensor.Metagraph'
+```
+Returns the metagraph for the subnet associated with a given network user id (netuid). If 'lite' is True, it returns a metagraph using the lightweight sync (no weights, no bonds).
+</Accordion>
+
+
+
+<Accordion title="Legacy">
+
+## Methods
+### get_balance
+```python
+get_balance(self, address: str, block: int = None) -> Balance
+```
+Returns the token balance for the given Substrate address at a specified block.
+
+---
+### get_current_block
+```python
+get_current_block(self) -> int
+```
+Returns the current block number on the chain.
+
+---
+### get_balances
+```python
+get_balances(self, block: int = None) -> Dict[str, Balance]
+```
+Returns a dictionary of balances for all addresses at a specified block. The dictionary keys are addresses and values are their corresponding balances.
+
+---
+### `__str__()`
+This method is used to provide a string representation of the instance.
+```python dark
+str(obj)
+```
+If the `network` argument equals the `chain_endpoint` argument, it returns a string that denotes connecting to a chain endpoint without a known network. Otherwise, it represents connecting to a network with a known endpoint.
+
+---
+### `__repr__()`
+This method is used to provide an official string representation of the instance.
+```python dark
+repr(obj)
+```
+The string returned by this method is identical to the one provided by the `__str__()` method.
+
+</Accordion>
+
+
+<Accordion title="Initialization">
+
+## Initialization
+
+To initialize an instance of the `Subtensor` class, you'll need to provide three arguments:
+
+```python dark
+import bittensor as bt
+obj = bt.subtensor( config, network, chain_endpoint )
+```
+
+</Accordion>
+
+
+<Accordion title="Arguments">
+
+### Arguments
+- `config (bt.Config, optional, defaults=bt.subtensor.config())`:
+    Subtensor config object containing arguments from bt.subtensor.config() which are automatically parsed from command line and ENV vars.
+- `network (str, optional, default='finney')`: 
+    The subtensor network flag. The likely choices are:
+            -- local (local running network)
+            -- finney (main network)
+            -- mock (mock network for testing.)
+    If this option is set it overloads subtensor.chain_endpoint with
+    an entry point node from that network.
+- `chain_endpoint (str, default=None)`: 
+    The subtensor endpoint flag. If set, overrides the network argument.
+
+
+</Accordion>
+
+
+
+
+
+
+
+
+
+
+
+
