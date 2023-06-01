@@ -17,7 +17,7 @@
 # [VALIDATING](validating/validating.md)
 
 
-# [CONSENSUS MECHANISM](content/validating/yuma-consensus.md)
+# [CONSENSUS MECHANISM](validating/yuma-consensus.md)
 
 
 # [DELEGATION](delegation/delegation.md)
