@@ -19,11 +19,6 @@
 
 # [DELEGATION](delegation/delegation.md)
 
-
-# [DIFFICULTY](reference/difficulty.md)
-
-# [TESTNET](reference/testnet.md)
-
 # [API](bittensor-api/index.md)
 
 # [BTCLI](reference/btcli.md)
