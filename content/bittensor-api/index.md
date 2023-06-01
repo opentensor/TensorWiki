@@ -287,6 +287,7 @@ Returns the network BlocksSinceLastStep hyperparameter if the network exists. In
 tempo (self, netuid: int, block: Optional[int] = None) -> int
 ```
 Returns the network Tempo hyperparameter if the network exists. Inputs are `netuid` and an optional `block` number.
+
 </Accordion>
 
 <Accordion title="Account Functions">
@@ -651,6 +652,7 @@ The string returned by this method is identical to the one provided by the `__st
 
 </Accordion>
 
+<Accordion title="Initialization">
 
 ## Initialization
 
@@ -660,6 +662,10 @@ To initialize an instance of the `Subtensor` class, you'll need to provide three
 import bittensor as bt
 obj = bt.subtensor( config, network, chain_endpoint )
 ```
+
+</Accordion>
+
+<Accordion title="Arguments">
 
 ### Arguments
 - `config (bt.Config, optional, defaults=bt.subtensor.config())`:
