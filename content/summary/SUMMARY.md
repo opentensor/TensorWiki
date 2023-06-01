@@ -24,17 +24,16 @@
 
 
 
-# REFERENCE
+# [REFERENCE]
 - [btcli](reference/btcli.md)
 - [Difficulty](reference/difficulty.md)
 - [Testnet](reference/testnet.md)
 
 
-# GLOSSARY
-- [glossary](glossary/glossary.md)
+# [GLOSSARY](glossary/glossary.md)
 
 
-# BITTENSOR-API
+# [BITTENSOR-API]
 - [bt.subtensor](bittensor-api/bt.subtensor.md)
 - [bt.wallet](bittensor-api/bt.wallet.md)
 - [bt.metagraph](bittensor-api/bt.metagraph.md)
