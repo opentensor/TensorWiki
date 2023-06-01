@@ -1,6 +1,8 @@
 
 <Accordion title="Subtensor">
----
+
+<Accordion title="subtensor">
+
 title: bt.subtensor
 ---
 # Subtensor Class Reference Documentation
@@ -673,5 +675,6 @@ obj = bt.subtensor( config, network, chain_endpoint )
 - `chain_endpoint (str, default=None)`: 
     The subtensor endpoint flag. If set, overrides the network argument.
 
+</Accordion>
 
 </Accordion>
