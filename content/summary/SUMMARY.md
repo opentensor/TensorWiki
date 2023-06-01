@@ -30,8 +30,6 @@
 - [Testnet](reference/testnet.md)
 
 
-# GLOSSARY
-- [glossary](glossary/glossary.md)
 
 
 # BITTENSOR-API
@@ -39,3 +37,5 @@
 - [bt.wallet](bittensor-api/bt.wallet.md)
 - [bt.metagraph](bittensor-api/bt.metagraph.md)
 - [bt.logging](bittensor-api/bt.logging.md)
+
+# [GLOSSARY](glossary/glossary.md)
