@@ -1,31 +1,27 @@
 
-# [Introduction](intro/index.md)
+# [INTRODUCTION](intro/index.md)
 
-# GETTING STARTED
-- [Installation](getting-started/installation.md)
-- [Wallet](getting-started/wallets.md)
-
-
-# SUBNETWORKS
-- [Subnetworks](subnetworks/subnetworks.md)
-- [Registration](subnetworks/registration.md)
-
-# CLIENTS
-- [Clients](clients/clients.md)
+# [GETTING STARTED](getting-started/installation.md)
+# [WALLET](getting-started/wallets.md)
 
 
-# MINING
-- [Mining](mining/mining.md)
+# [SUBNETWORKS](subnetworks/subnetworks.md)
+# [REGISTRATION](subnetworks/registration.md)
 
 
-# VALIDATING
-- [Validating](validating/validating.md)
-- [Validator Permit](validating/validator-permit.md)
+# [CLIENT API](clients/clients.md)
+
+# [MINING](mining/mining.md)
 
 
-# DELEGATION
-- [Delegation](delegation/delegation.md)
-- [Signing Delegates](delegation/signing.md)
+# [VALIDATING](validating/validating.md)
+
+
+# [CONSENSUS MECHANISM](content/validating/yuma-consensus.md)
+
+
+# [DELEGATION](delegation/delegation.md)
+
 
 
 # REFERENCE
