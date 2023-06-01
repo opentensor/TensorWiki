@@ -392,7 +392,11 @@ tx_rate_limit (self, block: Optional[int] = None ) -> Optional[int]
 Returns the transaction rate limit as of a specified block. If no block is provided, the default is the current block.
 </Accordion>
 
+
+
 <Accordion title="Subnetwork Stake">
+
+---
 
 ### subnet_exists
 ```python
