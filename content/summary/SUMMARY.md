@@ -24,14 +24,11 @@
 
 # [TESTNET](reference/testnet.md)
 
-# [BITTENSOR-API](bittensor-api/index.md)
-
-
-- [bt.wallet](bittensor-api/bt.wallet.md)
-- [bt.metagraph](bittensor-api/bt.metagraph.md)
-- [bt.logging](bittensor-api/bt.logging.md)
+# [API](bittensor-api/index.md)
 
 # [BTCLI](reference/btcli.md)
+
+# [REFERENCE](reference/testnet.md)
 
 # [GLOSSARY](glossary/glossary.md)
 

@@ -1,3 +1,7 @@
+
+
+<Accordion title="Difficulty">
+
 ---
 title: Difficulty Adjustment
 ---
@@ -27,3 +31,5 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
     DIFFICULTY: Current proof of work difficulty
     BURN: Current cost to register a key via recycle registration.
 ```
+
+</Accordion>
