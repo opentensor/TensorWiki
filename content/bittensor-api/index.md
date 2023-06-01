@@ -1209,10 +1209,6 @@ Loads the Metagraph object's state_dict from the specified directory path.
 
 
 
-
-
-
-
 ---
 title: bt.logging
 ---
