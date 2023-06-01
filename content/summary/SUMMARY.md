@@ -33,6 +33,6 @@
 
 # [BTCLI](reference/btcli.md)
 
-# [GLOSSARYwhats going onnnnn](glossary/glossary.md)
+# [GLOSSARY](glossary/glossary.md)
 
 
