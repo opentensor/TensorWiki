@@ -374,11 +374,22 @@ Returns the prometheus information for the specified hotkey account if it exists
 
 
 </Accordion>
+</Accordion>
+
+
+
+
+
+
+
+
 
 
 
 
 <Accordion title="Global State">
+<Accordion title="Global State">
+
 
 ### block
 ```python
