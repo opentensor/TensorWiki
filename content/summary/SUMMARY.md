@@ -24,7 +24,8 @@
 
 # [TESTNET](reference/testnet.md)
 
-# BITTENSOR-API
+# [BITTENSOR-API](bittensor-api/index.md)
+
 - [bt.subtensor](bittensor-api/bt.subtensor.md)
 - [bt.wallet](bittensor-api/bt.wallet.md)
 - [bt.metagraph](bittensor-api/bt.metagraph.md)
