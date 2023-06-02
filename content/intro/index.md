@@ -1,5 +1,5 @@
 ---
-title: Introduction
+## Introduction 
 
 ---
 
@@ -8,7 +8,7 @@ Bittensor is a mining network, similar to Bitcoin, that offers censorship-resist
 This documentation covers the three primary ways that users can interact with the network: mining, validating, and as a client. 
 
 ---
-### Clients 
+### 01 Client 
 
 Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
 
