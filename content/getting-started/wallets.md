@@ -4,7 +4,7 @@
 
 The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a [coldkey](../glossary/glossary/#coldkey)  and a [hotkey](../glossary/glossary/#hotkey) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API. 
 
-The ```coldkey``` is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the ```hotkey``` is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network. 
+The (../glossary/glossary/#coldkey) is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the (../glossary/glossary/#hotkey) is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network. 
 
 Once you have [installed bittensor](../getting-started/installation), you can a wallet locally on your machine in two ways, described below. You can also create an [external wallet](#03-external-wallet).
 
@@ -54,7 +54,7 @@ $ tree ~/.bittensor/
                     my_first_hotkey     # Your unencrypted hotkey information.
 ```
 
-You can list all the local wallets stored in Bittensor's root directly with `btcli list`.
+You can list all the local wallets stored in Bittensor's root directly with [btcli list]((../reference/btcli)).
 ```bash dark nocopy 
 $ btcli list
 Wallets
@@ -62,7 +62,7 @@ Wallets
     my_wallet (<ss58_address>)
        └── my_first_hotkey (<ss58_address>)
 ```
-The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using `btcli transfer`.
+The [ss58 encoded](https://docs.substrate.io/reference/address-formats/#:~:text=case%20L%20(l)-,Address%20type,address%20bytes%20that%20follow%20it.&text=Simple%20account%2Faddress%2Fnetwork%20identifier,directly%20as%20such%20an%20identifier) strings shown above are compact representations of your public keys, use these as destinations for transfering TAO, for instance when using [btcli transfer](../reference/btcli).
 
 ?> Be sure to store your mnemonics safely
 If someone has your mnemonic, they own your TAO. If you lose the password to your wallet, or the access to the machine where the wallet is stored, you can always regenerate the coldkey using the mnemonic you saved from above. You can **not** retrieve the wallet with the password alone.
@@ -75,4 +75,4 @@ btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** 
 
 ### 03 External Wallet
 
-To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the `0.00` in the top right corner. Select `create` to create a new wallet or `import` to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO. 
+To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the **0.00** in the top right corner. Select **create** to create a new wallet or **import** to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO. 
