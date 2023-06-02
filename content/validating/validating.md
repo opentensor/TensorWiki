@@ -1,5 +1,5 @@
 ---
-title: Validating
+## Validating 
 ---
 Network validation is thus open to participants who have [registered](../subnetworks/registration) a UID on any subnetwork **and** who have enough TAO staked on their hotkey to be considered a [top 128 validator](../validating/validator-permit).
 
