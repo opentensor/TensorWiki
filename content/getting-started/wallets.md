@@ -13,9 +13,9 @@ Once you have [installed bittensor](../getting-started/installation), you can a 
 
  [hotkey](../glossary/glossary#hotkey)
 
- [hotkey](../glossary/glossary/#hotkey)
+ [hotkey](../glossary/glossary###hotkey)
 
- [hotkey](../glossary/glossary/hotkey)
+ [hotkey](../glossary/glossary##hotkey)
 
 ### 01 btcli
 
