@@ -14,7 +14,7 @@ subnet = bt.metagraph( netuid = 1, lite = False)
 print ('weights', subnet.W )
 ```
 
-## Ranks, Trust, Consensus and Incentive 
+### Ranks, Trust, Consensus and Incentive 
 
 Yuma consensus is the algorithm which translates the weight matrix into a the incentive landscape into which miners must mine. 
 
@@ -35,7 +35,6 @@ Validators thus speculate
 TAO which has been locked into Bittensor's incentive mechanism and attached to a validator. 
 
 However, consensus is rewarded by the network as validators accumulate `dividends` while remaining in agreement with others in the network.
-
 
 
 nder the hood, Bittensor’s economic market, is facilitated by a blockchain token mechanism, through which producers ([miners](mining/introduction)) and the verification of the work done by those miners ([validators](validating/introduction)) are rewarded. Miners host, train or otherwise procure machine learning systems into the network as a means of fulfilling the verification problems defined by the validators, like the ability to generate responses from prompts i.e. “What is the capital of Texas? and making them available to [clients](clients/introduction). 
