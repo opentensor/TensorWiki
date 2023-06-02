@@ -11,6 +11,12 @@ Once you have [installed bittensor](../getting-started/installation), you can a 
 
  through the Bittensor website, or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/). Both of these options allow you to use TAO without installing Bittensor.
 
+ [hotkey](../glossary/glossary#hotkey)
+
+ [hotkey](../glossary/glossary/#hotkey)
+
+ [hotkey](../glossary/glossary/hotkey)
+
 ### 01 btcli
 
 ```bash dark
