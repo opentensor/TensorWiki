@@ -10,9 +10,9 @@ This documentation covers the three primary ways that users can interact with th
 
 
 ---
-### 01 / MINING 
+### 01 Mining 
 
-Individuals contributing compute, expertise or innovation into Bittensor and looking to get paid for it.
+Individuals contributing value to the network in return for compensation in the form of TAO. 
 
 ```bash
 bittensor/
@@ -24,9 +24,9 @@ bittensor/
 ```
 
 ---
-### 02 / VALIDATING 
+### 02 Validating 
 
-Tao holders looking to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.
+Tao holders who wish to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.
 
 ```bash
 bittensor/
@@ -37,7 +37,7 @@ bittensor/
                 core/
                     neuron.py
 ```
-### 03 / API
+### 03 API
 
 Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
 
