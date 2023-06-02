@@ -6,7 +6,7 @@ The Bittensor wallet is the core ownership and identity technology around which 
 
 Once you have [installed bittensor](../getting-started/installation) you can create wallets locally on your machine in two ways. Alternatively, you can create an [external wallet](#external-wallet), or use a secondary tool like [subkey](https://docs.substrate.io/reference/command-line-tools/subkey/) to generate valid Bittensor keys without installing Bittensor locally. 
 
-## Using btcli
+### 01 BTCI
 
 ```bash dark
 $ btcli new_coldkey --wallet.name my_coldkey
@@ -27,7 +27,7 @@ $ btcli new_hotkey --wallet.name my_coldkey --wallet.hotkey my_first_hotkey
 If you want to encrypt your hotkey, use `btcli new_hotkey --use_password`.
 
 
-## Using Python
+### 02 Python
 
 ```python numbered dark
 import bittensor as bt
@@ -67,5 +67,6 @@ btcli regen_coldkey --mnemonic **** *** **** **** ***** **** *** **** **** **** 
 ```
 ---
 
-## External Wallet
+### 03 External Wallet
+
 To create a wallet without installing bittensor you can use the wallet on [Bittensor](http://bittensor.com). Click the `0.00` in the top right corner. Select `create` to create a new wallet or `import` to import your mnemonic from an existing wallet. The "access" option can be used if you have already created a wallet using the website and have not chosen to "forget" it. Once you have accessed your account, you can send, receive, or stake your TAO. 

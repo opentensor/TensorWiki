@@ -4,7 +4,7 @@ title: Yuma Consensus
 
 Bittensor's API is designed to allow Validators to write their own validation mechanisms and express their own subjective prefrences about what the network should learn. This both [1] facilitates the economic market through which producers ([miners](mining/introduction)) are constantly driven to make their knowledge output more useful, in terms of speed, intelligence and diversity, but also [2] decentralizes Bittensor's the governance across multiple diverse stakeholders, ensuring that no single group has full control over what is learned.
 
-## Weights
+### Weights
 
 Validators express their perspective about how performant miners are on a subnetwork through a set of weights `w_i` which aggregated across validators on a particular subnetwork produce a weight matrix `W`. Validators learn their row of `W` by running the validator and continuously verifying the responses produced by miners in terms of in terms of speed, intelligence and diversity. 
 
@@ -18,7 +18,7 @@ print ('weights', subnet.W )
 
 Yuma consensus is the algorithm which translates the weight matrix into a the incentive landscape into which miners must mine. 
 
-## Yuma Consensus
+### Yuma Consensus
 
 Divergence from view points however is dangerous, especially if bad actor validators merely manipulate incentives in ways that benefits themselves, lying about the value produced by miners for instance. To avoid this scenario Bittensor uses a dual proof-of-stake, proof-of-work mechanism called Yuma Consensus which rewards validators with ```dividends``` for producing evaluations of miner-value which are in agreement with the subjective evaluations produced by other validators weighted by ```stake```. 
 

@@ -20,7 +20,7 @@ All entrypoints can be viewed using `btcli list_delegates`:
 
 
 ---
-## Querying the Network 
+### Querying the Network 
 
 Text prompting requests can be sent via `bt.prompt`.
 ```python numbered dark
@@ -41,7 +41,7 @@ should_I_buy_a_boat = bt.prompt( content = content )
 ```
 
 ---
-## Integrating with Langchain
+### Integrating with Langchain
 
 The BittensorLLM object can be integrated with langchain.
 ```python numbered dark removed=2,4 added=1,3
@@ -53,7 +53,7 @@ llm( 'prompt me' )
 ```
 
 ---
-## Getting Multiple Responses
+### Getting Multiple Responses
 
 You can return multiple responses for a single prompt.
 ```python numbered dark
@@ -68,7 +68,7 @@ bt.prompt( "What should I do today?", return_all = True )
 ```
 
 ---
-## Specifying an Entrypoint 
+### Specifying an Entrypoint 
 
 You can specify a unique entrypoint endpoint to query by its hotkey.
 > NOTE: Note, unless that endpoint has specifically opened up access to this form of query, you are likely to have your messages blacklisted. 
@@ -80,7 +80,7 @@ print ( bt.prompt( "Heraclitus was a ", hotkey = open_endpoint_hotkey ) )
 ```
 
 ---
-## Using a Validator Key
+### Using a Validator Key
 
 Power users who have a validator key registered on the network already do not need to access the network indirectly, and can instead make RPC connections directly to miners like so:
 ```python numbered dark

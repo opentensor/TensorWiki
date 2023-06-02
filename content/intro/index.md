@@ -8,7 +8,8 @@ Bittensor is a mining network, similar to Bitcoin, that offers censorship-resist
 This documentation covers the three primary ways that users can interact with the network: mining, validating, and as a client. 
 
 ---
-## Clients 
+### Clients 
+
 Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
 
 ```bash
@@ -17,7 +18,7 @@ Out[4]: 'Greek philosopher known for his doctrine of change and the famous quote
 ```
 
 ---
-## Miners
+### Miners
 
 Individuals contributing compute, expertise or innovation into Bittensor and looking to get paid for it.
 
@@ -31,7 +32,8 @@ bittensor/
 ```
 
 ---
-## Validators
+### Validators
+
 Tao holders looking to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.
 
 ```bash

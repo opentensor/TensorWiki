@@ -18,7 +18,7 @@ This will point the system towards the testnet blockchain. You can also run a lo
 ./node-subtensor --chain test_finney --rpc-external --rpc-cors all --ws-external --no-mdns --sync warp --bootnodes /ip4/192.81.212.20/tcp/30333/p2p/12D3KooWQawexXodtsPEymJUX1X2eKzjNq6s8MvzEWtKwJ6mLmzy
 ```
 
-# Testnet Taonomics
+### Testnet Taonomics
 The consensus mechanism, validation, and mining are all identical between the test net and the main net, with the only exception being that there is no Tao issued to Neurons (meaning emissions are 0).
 
 
@@ -27,7 +27,7 @@ The consensus mechanism, validation, and mining are all identical between the te
 
 
 
-<Accordion title="Difficulty">
+<Accordion title="Difficulty Adjustment">
 
 ---
 title: Difficulty Adjustment

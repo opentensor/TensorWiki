@@ -10,7 +10,7 @@ title: bt.subtensor
 # Subtensor Class Reference Documentation
 
 ---
-## Introduction
+### Introduction
 
 The `Subtensor` is utilized for managing interactions with the subtensor chain. It serves as an interface to communicate with "Finney", Bittensor's main blockchain network, or others, enabling operations like querying and transacting.
 
