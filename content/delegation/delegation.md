@@ -2,7 +2,6 @@
 title: Delegation
 ---
 
-
 Delegation occurs when TAO is transferred to a hotkey that is not owned by the delegate, and enables external users, or those without sufficent TAO to run a validator,  to increase their earning by accruing dividends. This mechanism prompts growth and facilitates efficient resource allocation around value-producing nodes, enhancing the overall utility of the network. In order to receive delegated TAO from the network ```delegates```, hotkeys can nominate themselves as ```nominates```. Of the TAO earned through delegation, the nominates are entitled to an 18% "tax" for owning the nominated hotkey, while the rest is distributed to the delegate in proportion to their delegated stake. 
 
 !> Delegation Cut
@@ -52,18 +51,11 @@ $ btcli nominate
     --wallet.hotkye YOUR_HOTKEY_NAME
 ```
 
-## Further Reading
-Delegation allows users to participate in Bittensor’s consensus mechanis without much TAO. By delegating Tao to a Validator, users are able to earn back Tao proportional to their contribution. Users are incentivized to delegate to a Validator based on the project that Validator is proposing. For example, a Validator can propose to validate and research image-to-text models. Users interested in image-to-text models on the Bittensor protocol are then encouraged to delegate Tao to that Validator to fund it with Tao. Hence, delegation is effectively a funding mechanism for projects on top of Bittensor.
-
-By default, the delegates collect an 18\% share of all emissions from delegated TAO. The delegate validators must perform better than their peers to remain competitive while promoting growth and quality in the network. Delegation facilitates resource utilization, creating more powerful nodes and enhancing the network's innovative potential.
-
-When delegating, users stake their Tao to a Hotkey belonging to a third-party Validator on the Bittensor network. This removes the need for users to provision their own hardware and deploy their own Validator. Instead, the delegating Hotkey will be responsible for validation and will provide any bond-emissions returns to the staking user's Coldkey, minus the 18\% fee. 
-
----
 # Signing Delegates
 ---
 
 Signing your delegate name, URL and description makes it show when others run btcli list_delegates. To do this you need to submit a pull request to the bittensor-delegates repo. 
+
 
 1. Generating your details
 ```bash dark title=bittensor/scripts/validator_info_signature/generate.py link=https://github.com/opentensor/bittensor/scripts/validator_info_signature/generate.py
