@@ -12,7 +12,9 @@ This documentation covers the three primary ways that users can interact with Bi
 ---
 ### 01 Mining 
 
-Individuals contributing value to the network in return for compensation in the form of TAO. 
+Individuals contributing value to the network in return for compensation in the form of TAO. Start [here]((../mining/mining)).
+
+Follow [this]((../mining/mining)) link to begin. 
 
 ```bash
 bittensor/
@@ -26,7 +28,7 @@ bittensor/
 ---
 ### 02 Validating 
 
-Tao holders who wish to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.
+Tao holders who wish to govern Bittensor directly and use the network at its full capactiy bandwidth and fidelity.  Start [here](../validating/validating). 
 
 ```bash
 bittensor/
@@ -39,7 +41,7 @@ bittensor/
 ```
 ### 03 API
 
-Users, researchers or companies, seeking to access bittensor directly using client facing APIs.
+Users, researchers or companies, seeking to access bittensor directly using client facing APIs. Start [here](../clients/clients). 
 
 ```bash
 In [4]: llm( "Heraclitus was a ?" )
