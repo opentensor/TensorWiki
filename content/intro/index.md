@@ -1,9 +1,11 @@
 ---
 title: Introduction
----
-Bittensor is a mining network, similar to Bitcoin, that includes built-in incentives designed to encourage computers to provide access to machine learning models in an efficient and censorship-resistant manner, for instance; generating text, audio, and images, or for extracting numerical representations of these input types a.k.a embeddings.
 
-There are three primary ways to interact with Bittensor which this documentation covers.
+---
+
+Bittensor is a mining network, similar to Bitcoin, that offers censorship-resistant access to a decentralized network of machine learning models. By leveraging digital incentives and rewarding participants directly for their contributions of computational resources, expertise and innovation, Bittensor establishes a comprehensive, incentivized, and open-source ecosystem of artificial intelligence capabilities. The native currency, TAO, constitutes both reward and access token.
+
+This documentation covers the three primary ways that users can interact with the network: mining, validating, and as a client. 
 
 ---
 ## Clients 
