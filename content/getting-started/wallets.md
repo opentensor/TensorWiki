@@ -2,7 +2,7 @@
 ## Wallets
 ---
 
-The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a ```coldkey``` and a [hotkey](glossary.md/hotkey) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API. 
+The Bittensor wallet is the core ownership and identity technology around which all functionalities of the network are carried out. A wallet consists of a ```coldkey``` and a [hotkey](glossary/hotkey) pairing of two seperate [EdDSA cryptographic keypairs](https://en.wikipedia.org/wiki/EdDSA#Ed25519) that are responsible for different functionalities within the ecosystem, but are logically connected via the API. 
 
 The ```coldkey``` is encrypted on your device and is used to store funds securely and perform high risk operations, such as transfers and staking, while the ```hotkey``` is unencrypted, and used for less secure operations such as signing messages into the network, running miners, and validating the network. 
 
