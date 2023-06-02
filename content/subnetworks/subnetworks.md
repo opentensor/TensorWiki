@@ -7,6 +7,7 @@ Bittensor runs multiple self-contained economic markets incentivizing access to 
 
 ---
 
+
 ### Viewing Subnetworks
 
 You can uses `btcli list_subnets` to show all currently running subnetworks on bittensor.  
