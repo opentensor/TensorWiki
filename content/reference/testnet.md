@@ -1,5 +1,5 @@
 ---
-title: Reference
+## Testnet & Difficulty
 ---
 
 <Accordion title="Testnet">
