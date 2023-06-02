@@ -1,5 +1,5 @@
 ---
-## Btcli 
+## Btcli
 ---
 
 The Bittensor command line interface (btcli) comes [installed](../getting-started/installation) with the bittensor API and can be used to stake or unstake funds, run miners, check network state, and even deploy, analyze, and interface with the Bittensor network.
@@ -8,7 +8,7 @@ The Bittensor command line interface (btcli) comes [installed](../getting-starte
 
 <Accordion title="Basic Commands">
 
-```bash dark 
+```bash dark
 btcli [COMMAND]
 $ btcli --help
 
@@ -72,7 +72,7 @@ btcli new_coldkey
 ```
 
 #### **New Hotkey**
-Create a [EdDSA cryptographic keypair](https://en.wikipedia.org/wiki/EdDSA#Ed25519) hotkey associated with a wallet. 
+Create a [EdDSA cryptographic keypair](https://en.wikipedia.org/wiki/EdDSA#Ed25519) hotkey associated with a wallet.
 **Usage**: ```btcli new_hotkey [OPTIONS]```
 ```bash dark
 btcli new_hotkey
@@ -103,6 +103,7 @@ btcli regen_coldkeypub
 
 ---
 <Accordion title="Registration">
+
 #### **POW registration**
 Begins a proof of word registration.
 **Usage**: ```btcli register [OPTIONS]```
@@ -129,7 +130,7 @@ btcli transfer
 ```
 
 #### **Stake Tao**
-Stake TAO from the coldkey balance to the hotkey staking account. 
+Stake TAO from the coldkey balance to the hotkey staking account.
 **Usage**: ```btcli stake [OPTIONS]```
 ```bash dark
 btcli stake
@@ -176,7 +177,7 @@ btcli nominate
 ```
 
 #### **My Delegates**
-Create a hotkey associated to a wallet. 
+Create a hotkey associated to a wallet.
 **Usage**: ```btcli new_hotkey [OPTIONS]```
 ```bash dark
 btcli new_hotkey
