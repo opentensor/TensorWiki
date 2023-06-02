@@ -1,10 +1,12 @@
 ---
-title: Mining 101
+title: Mining
 ---
 Before mining you must [register](../subnetworks/registration) the [hotkey of your wallet](../getting-started/wallets) into a UID slot on one of Bittensor's [subnetworks](../subnetworks/subnetworks), once this UID is yours you can run [your own miner](../mining/custom_miners), or select one of Bittensor's many [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners). 
 
 ---
-#### Running Pre-Built Miners
+## Running Pre-Built Miners
+
+
 Bittensor's [pre-built miners](https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners) are installed from [source](https://github.com/opentensor/bittensor.git). For instance,
 ```bash dark title=bittensor/neurons/text_prompting/miners/GPT4ALL link=https://github.com/opentensor/bittensor/tree/text_prompting/neurons/text/prompting/miners/GPT4ALL
 $ git clone https://github.com/opentensor/bittensor.git
@@ -40,7 +42,9 @@ python3 bittensor/neurons/text_prompting/miners/GPT4ALL/neuron.py
     --logging.debug 
 ```
 
-#### Running with PM2
+## Running with PM2
+
+
 It is recommended that you run miners using a process manager such as [PM2](https://pm2.io/).
 ```bash dark
 sudo apt-get install npm

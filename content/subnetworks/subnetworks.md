@@ -4,7 +4,7 @@ title: Subnetworks
 Bittensor runs multiple self-contained economic markets incentivizing access to different forms of machine intelligence, for instance; subnetwork 1 produces completions from text prompts and subnetwork 2 incentivizes the production of informationally dense embeddings from text. These economic domains are called "subnetworks".
 
 --- 
-### Viewing Subnets
+## Viewing Subnets
 You can uses `btcli list_subnets` to show all currently running subnetworks on bittensor.  
 ```bash dark
 $ btcli list_subnets
@@ -24,7 +24,7 @@ NETUID  NEURONS  MAX_N   DIFFICULTY  TEMPO  CON_REQ  EMISSION  BURN(τ)
 ```
 
 ---
-### Viewing Subnet State
+## Viewing Subnet State
 To extract more fine grained information about each subnetwork use `bt.metagraph`.
 ```python numbered dark
 import bittensor as bt 
@@ -49,7 +49,7 @@ uid = 123
 print ('uid', uid, ' owned by hotkey:', subnet.hotkeys[ uid ], 'assoicated with coldkey': subnet.coldkey[ uid ] )
 ```
 ---
-### Viewing Subnet Parameters
+## Viewing Subnet Parameters
 
 Through [registration](../subnetworks/registration) hotkeys cycle in and out of each subnetwork depending on their performance according to subnetworks [validators](../validating/validating). Stake `metagraph.S` across subnetwork is universal. This validation method is performed by validators setting a set of weights `metagraph.W` on the chain based on their subjective valuations of the miners across the network.
 

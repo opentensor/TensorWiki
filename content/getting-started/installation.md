@@ -4,7 +4,7 @@ title: Installation
 
 There are three primary methods of installing Bittensor on your local machine. 
 
-# Installing from script. 
+## Installing from script
 
 This is the most straightforward method and is recommended for the novice user as it will pre-install requirements, like Python, if they are not already present on your machine. Simply paste the following into your terminal: 
 
@@ -13,13 +13,15 @@ This is the most straightforward method and is recommended for the novice user a
 ```
 
 ---
-# Installing with pip
+## Installing with pip
+
 ```bash dark
 pip3 install bittensor
 ```
 
 ---
-# Installing from source
+## Installing from source
+
 ```bash dark
 git clone https://github.com/opentensor/bittensor.git
 $ python3 -m pip install -e bittensor/
