@@ -1,11 +1,9 @@
 ---
 title: Delegation
 ---
-Delegation is transferring Tao to a hotkey that is not owned by your coldkey. Hotkeys which have nominated themselves are open to recieve these delegations as a way of pool that investment from others. Often used to raise funds for a validator position or advertise a community project.
 
-### How does delegation work?
 
-All of the TAO delegated to a hotkey is available to be used within Bittensor's consensus mechanism. This gives the owning hotkey weight in the network to perform validation and thus recieve `dividends`. These dividends are distributed between the owning hotkey and the accounts that have nominated TAO. The chain currently enforces an `18%` cut for the owning hotkey while the remaining funds are distributed based on their proportion stake. 
+Delegation occurs when TAO is transferred to a hotkey that is not owned by the delegate, and enables external users, or those without sufficent TAO to run a validator,  to increase their earning by accruing dividends. This mechanism prompts growth and facilitates efficient resource allocation around value-producing nodes, enhancing the overall utility of the network. In order to receive delegated TAO from the network ```delegates```, hotkeys can nominate themselves as ```nominates```. Of the TAO earned through delegation, the nominates are entitled to an 18% "tax" for owning the nominated hotkey, while the rest is distributed to the delegate in proportion to their delegated stake. 
 
 !> Delegation Cut
 The delegation cut is presently a hard coded but subject to change as the network evolves.
