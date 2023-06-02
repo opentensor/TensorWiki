@@ -14,7 +14,7 @@ This documentation covers the three primary ways that users can interact with Bi
 
 Individuals contributing value to the network in return for compensation in the form of TAO. Start [here]((../mining/mining)).
 
-Follow [this]((../mining/mining)) link to begin. 
+Follow [this](../mining/mining) link to begin. 
 
 ```bash
 bittensor/

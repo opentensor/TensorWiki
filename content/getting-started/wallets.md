@@ -17,6 +17,9 @@ Once you have [installed bittensor](../getting-started/installation), you can a 
 
  [hotkey](../glossary/glossary.md##hotkey)
 
+  [hotkey](../glossary/glossary.md/#hotkey)
+
+ [hotkey](../glossary/glossary.md/###hotkey)
 ### 01 btcli
 
 ```bash dark
