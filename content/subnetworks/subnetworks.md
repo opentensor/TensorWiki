@@ -1,8 +1,11 @@
 ---
-## Subnetworks
---- 
+## Subnetworks 
+
+---
 
 Bittensor runs multiple self-contained economic markets incentivizing access to different forms of machine intelligence, for instance; subnetwork 1 produces completions from text prompts and subnetwork 2 incentivizes the production of informationally dense embeddings from text. These economic domains are called "subnetworks".
+
+---
 
 ### Viewing Subnetworks
 
